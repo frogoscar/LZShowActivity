@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">练字秀</string>
+    
+    <!-- main.xml -->
+	<string name="summaryAverage">平均</string>
+    <string name="summaryTotal">总计</string>
+    <string name="summaryDays">日</string>
+    <string name="page01workout">字帖show</string>
+    <string name="page01traning">个人show</string>
+    <string name="page01record">记录</string>
+    
+    <!-- record.xml -->
+    <string name="recordtitle">字帖练字</string>
+    
+    <!-- share_popupwindow.xml -->
+    <string name="save_ok">保存图片成功</string>
+    
+    <!-- PractiseActivity -->
+    <string name="save_dialog_title">提示</string>
+    <string name="save_dialog_message">保存成功，是否分享？</string>
+    <string name="save_dialog_confirmbtn">是</string>
+    <string name="save_dialog_cancelBtn">否</string>
+    
+	<string name="practise_previous_word">上一个</string>
+	<string name="practise_clear_word">清除</string>
+	<string name="practise_next_word">下一个</string>
+	
+	<!-- Toast -->
+	<string name="toast_exception_db">数据库出错</string>
+	<string name="toast_exception_fontlib">字帖加载失败</string>
+	
+	<!-- PractiseActivity -->
+	<string name="pa_backbtn_text">后退</string>
+	<string name="pa_title">字帖练字</string>
+	<string name="pa_fontlibbtn_text">字帖</string>
+	<string name="fontlib500">500个高频字</string>
+	<string name="fontlib2500">2500个常用字</string>
+	<string name="famous_words">名言警句</string>
+	<string name="songci300">宋词300首</string>
+	<string name="tangshi300">唐诗300首</string>
+	<string name="dream">梦想</string>
+	
+	<!-- FontLibActivity -->
+	<string name="fla_title">字帖</string>
+	
+	<!-- ContentDescription -->
+	<string name="cd_trail">Trail</string>
+	<string name="cd_logo">Logo</string>
+	<string name="cd_workout">Workout</string>
+	<string name="cd_training">Training</string>
+	<string name="cd_record">Record</string>
+	<string name="cd_design">Design</string>
+	<string name="cd_lauch">Lauch</string>
+	
+	<!-- LZShowActivity -->
+	<string name="ddd_text">/d</string>
+	
+	<!-- AboutActivity -->
+	<string name="about_string">练字秀 v1.0\n版权所有：XHHLZ\n联系邮箱：\nyfnick2010@gmail.com\n欢迎提出宝贵意见，谢谢！</string>
+	<string name="about_title">练字秀 关于</string>
+	
+	<!-- FontLibContentActivity -->
+	<string name="fca_enter_fontlib">开始练习</string>
+	
+	<string name="maintain_info">功能正在完善中</string>
+	
+    
+</resources>

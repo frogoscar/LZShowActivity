@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:pageview="http://schemas.android.com/apk/res/com.xhhlz.lzshow">
+	
+	<com.xhhlz.lzshow.ui.PagedView
+		android:id="@+id/paged_view"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+
+	<com.xhhlz.lzshow.ui.PageIndicator
+		android:id="@+id/page_indicator_prev"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|left"
+		android:paddingBottom="10dp"
+		android:paddingRight="15dp"
+		android:paddingTop="25dp"
+		android:paddingLeft="15dp"
+		pageview:dotType="multiple"
+		
+		pageview:gravity="left" />
+
+	<com.xhhlz.lzshow.ui.PageIndicator
+		android:id="@+id/page_indicator_next"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|right"
+		android:paddingBottom="10dp"
+		android:paddingRight="15dp"
+		android:paddingTop="25dp"
+		android:paddingLeft="15dp"
+		pageview:dotType="multiple"
+		
+		pageview:gravity="right" />
+
+	<com.xhhlz.lzshow.ui.PageIndicator
+		android:id="@+id/page_indicator_other"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|center_horizontal"
+		android:paddingTop="10dp" 
+		pageview:dotDrawable="@drawable/gd_page_indicator_dot"
+		/>
+
+</FrameLayout>

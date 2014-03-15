@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:background="@drawable/personalshow_top_widget" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:background="@drawable/personalshow_top_widget" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:background="@drawable/personalshow_top_widget" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:background="@drawable/personalshow_top_widget" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:background="@drawable/personalshow_top_widget" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:background="@drawable/personalshow_top_widget" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ads"
+        android:layout_width="fill_parent"
+        android:layout_height="20.0dip"
+        android:layout_below="@id/header" />
+
+    <ImageView
+        android:id="@+id/topline"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ads"
+        android:background="@drawable/personalshow_top_line" />
+
+    <RelativeLayout
+        android:id="@+id/middle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/topline"
+        android:orientation="horizontal" >
+
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/personalshow_table_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/topline"
+            android:orientation="horizontal" >
+
+            <TableRow android:paddingTop="5dp" >
+
+                <LinearLayout android:id="@+id/personalshow_table_view_row1" >
+                   
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow android:paddingTop="10dp" >
+
+                <LinearLayout android:id="@+id/personalshow_table_view_row2" >
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow android:paddingTop="10dp" >
+
+                <LinearLayout android:id="@+id/personalshow_table_view_row3" >
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow android:paddingTop="10dp" >
+
+                <LinearLayout android:id="@+id/personalshow_table_view_row4" >
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow android:paddingTop="10dp" >
+
+                <LinearLayout android:id="@+id/personalshow_table_view_row5" >
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow android:paddingTop="10dp" >
+
+                <LinearLayout android:id="@+id/personalshow_table_view_row6" >
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+        <view
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/personalshow_edit_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            class="com.xhhlz.lzshow.ui.PersonalShowEditView"
+            android:background="@android:color/transparent"
+            android:focusable="false"
+            android:gravity="top"
+            android:padding="5dp"
+            android:scrollbars="vertical"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/buttom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/blank"
+            android:layout_width="51dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_personal_show_bg"
+            android:text="" />
+
+        <ImageView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/new_show_divider" />
+
+        <Button
+            android:id="@+id/enter"
+            android:layout_width="51dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_personal_show_bg"
+            android:text="" />
+
+        <ImageView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/new_show_divider" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="51dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_personal_show_bg" />
+
+        <ImageView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/new_show_divider" />
+
+        <Button
+            android:id="@+id/width"
+            android:layout_width="51dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_personal_show_bg" />
+
+        <ImageView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/new_show_divider" />
+
+        <Button
+            android:id="@+id/qingkong"
+            android:layout_width="51dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_personal_show_bg" />
+
+        <ImageView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/new_show_divider" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_personal_show_save_bg"
+            android:gravity="center"
+            android:text="保存" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5.0dp"
+        android:layout_marginLeft="10.0dp"
+        android:background="@drawable/personalshow_paint" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5.0dp"
+        android:layout_marginLeft="64.0dp"
+        android:background="@drawable/personalshow_blank" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5.0dp"
+        android:layout_marginLeft="115.0dp"
+        android:background="@drawable/personalshow_return" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5.0dp"
+        android:layout_marginLeft="168.0dp"
+        android:background="@drawable/personalshow_delete" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5.0dp"
+        android:layout_marginLeft="220.0dp"
+        android:background="@drawable/personalshow_trash" />
+
+</RelativeLayout>

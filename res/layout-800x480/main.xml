@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <Button
+        android:id="@+id/aboutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/button_about_bg"/>
+      <!-- android:background="@drawable/button_about_bg" /> -->
+    
+
+    <Button
+        android:id="@+id/introButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_toRightOf="@id/aboutButton"
+        android:background="@drawable/button_intro_bg" />
+
+    <TextView
+        android:id="@+id/summaryAverage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="5.0dip"
+        android:text="@string/summaryAverage"
+        android:textColor="#ffffffff"
+        android:textSize="11.0sp" />
+
+    <TextView
+        android:id="@+id/summaryTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_toLeftOf="@id/summaryAverage"
+        android:text="@string/summaryTotal"
+        android:textColor="#ffffffff"
+        android:textSize="11.0sp" />
+
+    <TextView
+        android:id="@+id/summaryDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_toLeftOf="@+id/summaryTotal"
+        android:text="@string/summaryDays"
+        android:textColor="#ffffffff"
+        android:textSize="11.0sp" />
+
+    <ImageView
+        android:id="@+id/trail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/summaryAverage"
+        android:background="@drawable/trail" 
+        android:contentDescription="@string/cd_trail"/>
+
+    <TextView
+        android:id="@+id/ddd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/summaryAverage"
+        android:layout_below="@+id/trail"
+        android:paddingLeft="2.0dip"
+        android:paddingTop="3.0dip"
+        android:text="@string/ddd_text"
+        android:textColor="#ff2eeaff"
+        android:textSize="11.0sp" />
+
+    <TextView
+        android:id="@+id/average"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trail"
+        android:layout_toLeftOf="@+id/ddd"
+        android:textColor="#ff2eeaff"
+        android:textSize="15.0sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/summaryTotal"
+        android:layout_below="@+id/trail"
+        android:textColor="#ff2eeaff"
+        android:textSize="15.0sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/summaryDays"
+        android:layout_below="@+id/trail"
+        android:textColor="#ff2eeaff"
+        android:textSize="15.0sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50.0dip"
+        android:background="#00000000"
+        android:src="@drawable/logo" 
+        android:contentDescription="@string/cd_logo"/>
+
+    <Button
+        android:id="@+id/train"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview"
+        android:layout_marginLeft="59.0dip"
+        android:layout_marginTop="30.0dip"
+        android:background="@drawable/button_yellow_bg"
+        android:gravity="center"
+        android:text="@string/page01workout"
+        android:textColor="#ff000000"
+        android:textSize="18.0sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview"
+        android:layout_marginLeft="90.0dip"
+        android:layout_marginTop="37.0dip"
+        android:background="@drawable/icon_workout"
+        android:contentDescription="@string/cd_workout" />
+
+    <Button
+        android:id="@+id/practice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/train"
+        android:layout_marginLeft="49.0dip"
+        android:background="@drawable/button_yellow_bg"
+        android:text="@string/page01traning"
+        android:textColor="#ff000000"
+        android:textSize="18.0sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/train"
+        android:layout_marginLeft="80.0dip"
+        android:layout_marginTop="8.0dip"
+        android:background="@drawable/icon_training"
+        android:contentDescription="@string/cd_training" />
+
+    <Button
+        android:id="@+id/record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/practice"
+        android:layout_marginLeft="39.0dip"
+        android:background="@drawable/button_grey_bg"
+        android:text="@string/page01record"
+        android:textColor="#ff000000"
+        android:textSize="18.0sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/practice"
+        android:layout_marginLeft="75.0dip"
+        android:layout_marginTop="8.0dip"
+        android:background="@drawable/icon_record"
+        android:contentDescription="@string/cd_record" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/record"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30.0dip"
+        android:background="@drawable/designed" 
+        android:contentDescription="@string/cd_design"/>
+    
+
+</RelativeLayout>

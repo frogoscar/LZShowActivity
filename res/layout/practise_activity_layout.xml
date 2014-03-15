@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_practise_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/head" >
+
+        <Button
+            android:id="@+id/practise_button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/drawable_btn_back"
+            android:gravity="center"
+            android:text="@string/pa_backbtn_text"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtAppTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:shadowColor="#0F4689"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="3"
+            android:text="@string/pa_title"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/practise_fontlib_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/drawable_btn_fontlib"
+            android:gravity="center"
+            android:text="@string/pa_fontlibbtn_text"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/middle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rl_practise_detail"
+        android:background="@android:color/black"
+        android:orientation="horizontal" >
+
+        <!-- got a view here for handwriting -->
+            <com.xhhlz.lzshow.ui.PractiseWriteView
+                android:id="@+id/practise_write_view"
+                
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dip"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <Button
+            android:id="@+id/practise_previous_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_margin="3dp"
+            android:background="@drawable/btn_blue"
+            android:textColor="@color/white"
+            android:text="@string/practise_previous_word" />
+
+        <Button
+            android:id="@+id/practise_clear_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_margin="3dp"
+            android:background="@drawable/btn_blue"
+            android:textColor="@color/white"
+            android:text="@string/practise_clear_word" />
+
+        <Button
+            android:id="@+id/practise_next_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_margin="3dp"
+            android:background="@drawable/btn_blue"
+            android:textColor="@color/white"
+            android:text="@string/practise_next_word" />
+    </LinearLayout>
+
+</RelativeLayout>
